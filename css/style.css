@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "Noto Sans", sans-serif;
+	font-family: "Poppins", sans-serif;
+	body {
+		background-color: rgb(192, 204, 204);
+	}
+}
+
+nav {
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: rgb(104, 150, 150);
+	color: rgb(9, 9, 9);
+	padding: 15px 10px;
+}
+
+ul {
+	display: flex;
+}
+
+ul li {
+	list-style: none;
+	padding: 0 15px;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+ul li a {
+	color: rgb(9, 9, 9);
+	text-decoration: none;
+}
+
+ul > li > a:hover {
+	color: rgb(228, 222, 222);
+}
+
+main {
+	min-height: 100vh;
+}
+
+.logo img {
+	width: 20px;
+}
+
+.container {
+	max-width: 80vw;
+	margin: auto;
+	padding: 10px 15px;
+}
+
+.container h2 {
+	padding: 12px 0;
+}
+
+input {
+	min-width: 30vw;
+	padding: 4px 12px;
+	border: 2px solid black;
+	border-radius: 4px;
+	font-size: 15px;
+}
+
+#SubmitBtn {
+	min-width: 15vw;
+	padding: 3px 10px;
+}
+
+.btn {
+	background: rgb(140, 106, 106);
+	color: white;
+	padding: 9px 12px;
+	border: 1px solid gray;
+	border-radius: 10px;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+#resultCont div::first-letter {
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+footer {
+	font-size: 12px;
+	font-weight: 400;
+	background-color: rgb(120, 159, 159);
+	color: rgb(9, 9, 9);
+	display: flex;
+	padding: 15px;
+	justify-content: center;
+	align-items: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+	.container {
+		font-size: 12px;
+	}
+	nav {
+		flex-direction: column;
+	}
+	.logo {
+		padding: 2px 0;
+	}
+	.logo {
+		font-size: 20px;
+	}
+}
